@@ -1,0 +1,25 @@
+a {
+    text-decoration: none;
+}
+.d{
+    color:#c3bebe; 
+}
+.bg-footer
+{
+    background-color: #24272e;
+    color: rgb(255, 255, 255);
+}
+.hd{
+    list-style-type:none ;
+
+}
+.hd li a{
+    color: #3b12d1;
+}
+.nav li{
+border:1px #617bb0 ;
+width: 120px;
+}
+.nav li a{
+    color: #f5f5f5;
+}

@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="plugins/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <section class="nhd-header">
+        <div class="container py-2">
+            <div class="row">
+                <div class="col-md-2">
+                   <a href="#"> 
+                    <img class="img-fluid w-100" src="images/logo.webp" alt="logo">
+                   </a>
+                </div>
+                <div class="col-md-5 pt-3 pl-2">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Nội dung tìm kiếm..." aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <span class="input-group-text" id="basic-addon2"><i class="fa-solid fa-magnifying-glass"></i></span>
+                      </div>
+                </div>
+                <div class="col-md-2 d-none d-md-block pt-2">
+                    <div class="row">
+                        <div class="col-sm-2 fs-2">
+                            <i class="fa-solid fa-mobile-screen"></i>
+                        </div>
+                        <div class="col-sm 10"> 
+                            <p class="p-0 m-0" >Tư vấn hỗ trợ</p>
+                            <pc lass="p-0 m-0" ><strong class="text-danger" >1900 6750</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 pt-1 text-center">
+                    <div class="row">
+                        <div class="col-4"> 
+                            <a href="#">
+                            <p class="p-0 m-0 fs-5"><i class="fa-regular fa-user"></i></p>
+                            <p class="p-0 m-0"><strong>Đăng nhập</strong></p>
+                            </a>
+                        </div>
+                        <div class="col-4"> 
+                            <a href="#">
+                            <p class="p-0 m-0 fs-5"><i class="fa-regular fa-heart"></i></p>
+                            <p class="p-0 m-0"><strong>Yêu thích</strong></p>
+                            </a>
+                        </div>
+                        <div class="col-4">
+                            <a href="#">
+                                <p class="p-0 m-0 fs-5"><i class="fa-solid fa-bag-shopping"></i></p>
+                                <p class="p-0 m-0"><strong>Giỏ hàng</strong></p>
+                            </a>
+                        </div>
+                    </div>
+            </div>
+            </div>
+    </section>
+    <section class="nhd-mainmenu bg-body-tertiary">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                  <a class="navbar-brand d-block d-md-none" href="#">Navbar</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+                  aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" 
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                          Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        </div>
+    </section>
+    <section class="nhd-maincontent">
+        <div class="slider"></div>
+        
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="images/slider_1.webp" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/slider_1.webp" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/slider_1.webp" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+        <div class="container my-5">
+            <h3>MẪU MỚI VỀ</h3>
+            <div class="row">
+                <div class="col-md">
+                   <div class="product-item">
+                    <div class="product-item">
+                        <img class="img-fluid" src="images/sp1.webp" alt="">
+                    </div>
+                    <div class="product-name">
+                        <h4 class="fs-5 py-1">ÁO POLO PHỐI KHÓA CỔ</h4>
+                    </div>
+                    <div class="product-price">
+                        <div class="row">
+                            <div class="col-6">
+                                <strong class="text-danger fs-5">399.000 <sup>đ</sup></strong>
+                            </div>
+                            <div class="col-6 text-end">
+                                <del>460.000 <sup>đ</sup></del>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-cart-hearth-eye my-2">
+                        <div class="row">
+                            <div class="col-8">
+                                <a class="btn btn-sm btn-success form-control">Thêm vào giỏ hàng</a>
+                            </div>
+                            <div class="col-2">
+                                <button class="btn btn-sm btn-info">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                            </div>
+                            <div class="col-2">
+                                <button class="btn btn-sm btn-info">
+                                    <i class="fa-regular fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                   </div>
+                </div>
+                <div class="col-md">
+                    <div class="product-item">
+                        <div class="product-item">
+                            <img class="img-fluid" src="images/sp2.webp" alt="">
+                        </div>
+                        <div class="product-name">
+                            <h4 class="fs-5 py-1">Đầm cotton cao cấp</h4>
+                        </div>
+                        <div class="product-price">
+                            <div class="row">
+                                <div class="col-6">
+                                    <strong class="text-danger fs-5">360.000 <sup>đ</sup></strong>
+                                </div>
+                                <div class="col-6 text-end">
+                                    <del>550.000 <sup>đ</sup></del>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-cart-hearth-eye my-2">
+                            <div class="row">
+                                <div class="col-8">
+                                    <a class="btn btn-sm btn-success form-control">Thêm vào giỏ hàng</a>
+                                </div>
+                                <div class="col-2">
+                                    <button class="btn btn-sm btn-info">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </button>
+                                </div>
+                                <div class="col-2">
+                                    <button class="btn btn-sm btn-info">
+                                        <i class="fa-regular fa-eye"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                       </div>
+                </div>
+                <div class="col-md">
+                    <div class="product-item">
+                        <div class="product-item">
+                            <img class="img-fluid" src="images/sp3.webp" alt="">
+                        </div>
+                        <div class="product-name">
+                            <h4 class="fs-5 py-1">ÁO PHÔNG CỘC TAY</h4>
+                        </div>
+                        <div class="product-price">
+                            <div class="row">
+                                <div class="col-6">
+                                    <strong class="text-danger fs-5">360.000 <sup>đ</sup></strong>
+                                </div>
+                                <div class="col-6 text-end">
+                                    <del>460.000 <sup>đ</sup></del>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-cart-hearth-eye my-2">
+                            <div class="row">
+                                <div class="col-8">
+                                    <a class="btn btn-sm btn-success form-control">Thêm vào giỏ hàng</a>
+                                </div>
+                                <div class="col-2">
+                                    <button class="btn btn-sm btn-info">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </button>
+                                </div>
+                                <div class="col-2">
+                                    <button class="btn btn-sm btn-info">
+                                        <i class="fa-regular fa-eye"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                       </div>
+                </div>
+                <div class="col-md">
+                    <div class="product-item">
+                        <div class="product-item">
+                            <img class="img-fluid" src="images/sp4.webp" alt="">
+                        </div>
+                        <div class="product-name">
+                            <h4 class="fs-5 py-1">ÁO SƠ MI NGẮN TAY</h4>
+                        </div>
+                        <div class="product-price">
+                            <div class="row">
+                                <div class="col-6">
+                                    <strong class="text-danger fs-5">180.000 <sup>đ</sup></strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-cart-hearth-eye my-2">
+                            <div class="row">
+                                <div class="col-8">
+                                    <a class="btn btn-sm btn-success form-control">Thêm vào giỏ hàng</a>
+                                </div>
+                                <div class="col-2">
+                                    <button class="btn btn-sm btn-info">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </button>
+                                </div>
+                                <div class="col-2">
+                                    <button class="btn btn-sm btn-info">
+                                        <i class="fa-regular fa-eye"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                       </div>
+                </div>
+                <div class="col-md">
+                    <div class="product-item">
+                        <div class="product-item">
+                            <img class="img-fluid" src="images/sp5.webp" alt="">
+                        </div>
+                        <div class="product-name">
+                            <h4 class="fs-5 py-1">ÁO THUN UNISEX</h4>
+                        </div>
+                        <div class="product-price">
+                            <div class="row">
+                                <div class="col-6">
+                                    <strong class="text-danger fs-5">120.000 <sup>đ</sup></strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-cart-hearth-eye my-2">
+                            <div class="row">
+                                <div class="col-8">
+                                    <a class="btn btn-sm btn-success form-control">Thêm vào giỏ hàng</a>
+                                </div>
+                                <div class="col-2">
+                                    <button class="btn btn-sm btn-info">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </button>
+                                </div>
+                                <div class="col-2">
+                                    <button class="btn btn-sm btn-info">
+                                        <i class="fa-regular fa-eye"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                       </div>
+                </div>
+            </div>
+        </div>
+        <div class="container my-5">
+            <h3>SALE ĐỒNG GIÁ</h3>
+            <div class="row">
+                <div class="col-md">
+                   <div class="product-item">
+                    <div class="product-item">
+                        <img class="img-fluid" src="images/sp1.webp" alt="">
+                    </div>
+                    <div class="product-name">
+                        <h4 class="fs-5 py-1">ÁO POLO PHỐI KHÓA CỔ</h4>
+                    </div>
+                    <div class="product-price">
+                        <div class="row">
+                            <div class="col-6">
+                                <strong class="text-danger fs-5">399.000 <sup>đ</sup></strong>
+                            </div>
+                            <div class="col-6 text-end">
+                                <del>460.000 <sup>đ</sup></del>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-cart-hearth-eye my-2">
+                        <div class="row">
+                            <div class="col-8">
+                                <a class="btn btn-sm btn-success form-control">Thêm vào giỏ hàng</a>
+                            </div>
+                            <div class="col-2">
+                                <button class="btn btn-sm btn-info">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                            </div>
+                            <div class="col-2">
+                                <button class="btn btn-sm btn-info">
+                                    <i class="fa-regular fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                   </div>
+                </div>
+                <div class="col-md">
+                    <div class="product-item">
+                        <div class="product-item">
+                            <img class="img-fluid" src="images/sp2.webp" alt="">
+                        </div>
+                        <div class="product-name">
+                            <h4 class="fs-5 py-1">Đầm cotton cao cấp</h4>
+                        </div>
+                        <div class="product-price">
+                            <div class="row">
+                                <div class="col-6">
+                                    <strong class="text-danger fs-5">360.000 <sup>đ</sup></strong>
+                                </div>
+                                <div class="col-6 text-end">
+                                    <del>550.000 <sup>đ</sup></del>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-cart-hearth-eye my-2">
+                            <div class="row">
+                                <div class="col-8">
+                                    <a class="btn btn-sm btn-success form-control">Thêm vào giỏ hàng</a>
+                                </div>
+                                <div class="col-2">
+                                    <button class="btn btn-sm btn-info">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </button>
+                                </div>
+                                <div class="col-2">
+                                    <button class="btn btn-sm btn-info">
+                                        <i class="fa-regular fa-eye"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                       </div>
+                </div>
+                <div class="col-md">
+                    <div class="product-item">
+                        <div class="product-item">
+                            <img class="img-fluid" src="images/sp3.webp" alt="">
+                        </div>
+                        <div class="product-name">
+                            <h4 class="fs-5 py-1">ÁO PHÔNG CỘC TAY</h4>
+                        </div>
+                        <div class="product-price">
+                            <div class="row">
+                                <div class="col-6">
+                                    <strong class="text-danger fs-5">360.000 <sup>đ</sup></strong>
+                                </div>
+                                <div class="col-6 text-end">
+                                    <del>460.000 <sup>đ</sup></del>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-cart-hearth-eye my-2">
+                            <div class="row">
+                                <div class="col-8">
+                                    <a class="btn btn-sm btn-success form-control">Thêm vào giỏ hàng</a>
+                                </div>
+                                <div class="col-2">
+                                    <button class="btn btn-sm btn-info">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </button>
+                                </div>
+                                <div class="col-2">
+                                    <button class="btn btn-sm btn-info">
+                                        <i class="fa-regular fa-eye"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                       </div>
+                </div>
+                <div class="col-md">
+                    <div class="product-item">
+                        <div class="product-item">
+                            <img class="img-fluid" src="images/sp4.webp" alt="">
+                        </div>
+                        <div class="product-name">
+                            <h4 class="fs-5 py-1">ÁO SƠ MI NGẮN TAY</h4>
+                        </div>
+                        <div class="product-price">
+                            <div class="row">
+                                <div class="col-6">
+                                    <strong class="text-danger fs-5">180.000 <sup>đ</sup></strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-cart-hearth-eye my-2">
+                            <div class="row">
+                                <div class="col-8">
+                                    <a class="btn btn-sm btn-success form-control">Thêm vào giỏ hàng</a>
+                                </div>
+                                <div class="col-2">
+                                    <button class="btn btn-sm btn-info">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </button>
+                                </div>
+                                <div class="col-2">
+                                    <button class="btn btn-sm btn-info">
+                                        <i class="fa-regular fa-eye"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                       </div>
+                </div>
+                <div class="col-md">
+                    <div class="product-item">
+                        <div class="product-item">
+                            <img class="img-fluid" src="images/sp5.webp" alt="">
+                        </div>
+                        <div class="product-name">
+                            <h4 class="fs-5 py-1">ÁO THUN UNISEX</h4>
+                        </div>
+                        <div class="product-price">
+                            <div class="row">
+                                <div class="col-6">
+                                    <strong class="text-danger fs-5">120.000 <sup>đ</sup></strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-cart-hearth-eye my-2">
+                            <div class="row">
+                                <div class="col-8">
+                                    <a class="btn btn-sm btn-success form-control">Thêm vào giỏ hàng</a>
+                                </div>
+                                <div class="col-2">
+                                    <button class="btn btn-sm btn-info">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </button>
+                                </div>
+                                <div class="col-2">
+                                    <button class="btn btn-sm btn-info">
+                                        <i class="fa-regular fa-eye"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                       </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mb-4">
+            <h3 class="text-center">TIN TỨC MỚI NHẤT</h3>
+            <div class="row">
+                <div class="col-md-6">
+                    <img class="img-fluid w-100" src="images/hinh mau 1.webp" alt="">
+                    <h6>15/08/2021 - bởi: Ego Creative</h6>
+                    <h3>Mẫu Tây Andrea chuộng váy ngủ xuyên thấu</h3>
+                    <p>Andrea Aybar là người mẫu gốc Tây Ba Nha. Nhưng từ khi còn rất nhỏ, 
+                        cô đã cùng gia đình chuyển tới Việt Nam sinh sống và làm việc. Vì thế, Việt Nam được coi như là 
+                        quê hương thứ 2</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="row mb-2">
+                        <div class="col-5"> 
+                            <img class="img-fluid w-100" src="images/hinh mau 2.webp" alt="">
+                        </div>
+                        <div class="col-7">
+                            <h6>15/08/2021 - bởi: Ego Creative</h6>
+                            <h4>8 mẹo giúp bạn chọn quần jean trong mơ mà không cần đến shop</h4>
+                            <p>Để biết được quần jean có vừa với mình hay không theo kích cỡ,
+                               bạn không cần phải đứng xếp hàng trong
+                             </p>
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-5"> 
+                            <img class="img-fluid w-100" src="images/hinh mau 3.webp" alt="">
+                        </div>
+                        <div class="col-7">
+                            <h6>15/08/2021 - bởi: Ego Creative</h6>
+                            <h4>Học lỏm 10 bí quyết từ các stylist hàng đầu để mặc đẹp mà không tốn</h4>
+                            <p>1. Nếu bạn muốn chân trông dài hơn, hãy mang một đôi guốc cùng màu da của mình. 
+                                Chúng đánh lừa thị giác khiến bạn trông thanh mảnh và cao hơn. 2. Cách
+                             </p>
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-5"> 
+                            <img class="img-fluid w-100" src="images/hinh mau 4.webp" alt="">
+                        </div>
+                        <div class="col-7">
+                            <h6>15/08/2021 - bởi: Ego Creative</h6>
+                            <h4>Một cô nàng ăn mặc chất, ngoài khả năng bắt trend còn tuân thủ 4</h4>
+                            <p>Những bộ đồ ôm sát body giúp tôn lên đường cong nhưng mặc một 
+                               chiếc đầm bó chật quá mức hoặc chiếc quần jeans siêu skinny với mong muốn khoe
+                             </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="nhd-footer bg-footer py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h4>CHÚNG TÔI LÀ AI ?</h4>
+                    <p class="d">Copyright@ 2021 Công ty TNHH thời trang Ego Wear
+                        Ego Wear đang trong giai đoạn phát triển mạnh với nhiều mặt
+                         hàng phong phú giá cả cạnh tranh, mong muốn đem đến chất lượng 
+                         tốt nhất cho khách hàng.
+                    </p>
+                    <p class="d">
+                        Địa chỉ: 221 Chùa Bộc, Đống Đa, Hà Nội, Hà Nội
+                    </p>
+                    <p class="d"> 
+                        Điện thoại: 1900 6750 - Email: support@sapo.vn
+                    </p>
+                </div>
+                <div class="col-md">
+                    <h4>CHÍNH SÁCH</h4>
+                    <ul class="hd">
+                        <li><a href="#">Trang chủ</a></li>
+                        <li><a href="#">Sản phẩm</a></li> 
+                        <li><a href="#">Xu hướng</a></li>  
+                        <li><a href="#">Trang phục</a></li>  
+                        <li><a href="#">Phụ kiện</a></li>  
+                        <li><a href="#">Tin tức</a></li>   
+                        <li><a href="#">Câu hỏi</a></li>  
+                        <li><a href="#">Liên hệ</a></li> 
+                        
+                    </ul>
+                </div>
+                <div class="col-md">
+                    <h4>KHU BÁN HÀNG</h4>
+                    <ul class="hd">
+                           <li><a href="#">Trang chủ</a></li>
+                           <li><a href="#">Sản phẩm</a></li>
+                           <li><a href="#">Xu hướng</a></li> 
+                           <li><a href="#">Trang phục</a></li>  
+                           <li><a href="#">Phụ kiện</a></li>  
+                           <li><a href="#">Tin tức</a></li>  
+                           <li><a href="#">Câu hỏi</a></li>  
+                           <li><a href="#">Liên hệ</a></li>  
+                
+                    </ul>
+            </div>
+            <div class="col-md">
+                <h4>HỖ TRỢ CHUNG</h4>
+                <ul class="hd">
+                       <li><a href="#">Trang chủ</a></li>
+                       <li><a href="#">Sản phẩm</a></li>
+                       <li><a href="#">Xu hướng</a></li> 
+                       <li><a href="#">Trang phục</a></li>  
+                       <li><a href="#">Phụ kiện</a></li>  
+                       <li><a href="#">Tin tức</a></li>  
+                       <li><a href="#">Câu hỏi</a></li>  
+                       <li><a href="#">Liên hệ</a></li>  
+            
+                </ul>
+        </div>
+        </div>
+    </section>
+    <section class="nhd-copirigt bg-footer ">
+        <div class="container border-top py-3">
+            <div class="row">
+                <div class="col-6">
+                    Bản quyền thuộc về NGUYENHAIDANG Cung cấp bởi NGUYENHAIDANG
+                </div>
+                <div class="col-6 text-end">
+                    <ul class="nav">
+                        <li><a href="#">Trang chủ</a></li>
+                        <li><a href="#">Sản phẩm</a></li>  
+                         <li><a href="#">Xu hướng</a></li> 
+                        <li><a href="#">Trang phục</a></li>
+                        <li><a href="#">Phụ kiện</a></li> 
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
