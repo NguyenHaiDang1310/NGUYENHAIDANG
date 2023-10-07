@@ -1,0 +1,26 @@
+{
+    "name":"nguyenhaidang/shop-thoi-trang",
+    "description": "hoc-lap-trinh-wepsite-voi-thay-loi",
+    "authors": [{
+        "name": "nguyenhaidang",
+        "email": "nhd131004@gmail.com"
+    }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\":"app/"
+        },
+        "files": [
+            "./App/route.php",
+            "./config/database.php"
+        ]
+    },
+    "require": {}
+
+
+
+
+
+
+
+}
