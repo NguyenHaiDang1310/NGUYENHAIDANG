@@ -15,7 +15,10 @@
             "./config/database.php"
         ]
     },
-    "require": {}
+    "require": {
+        "illuminate/database": "^10.26",
+        "illuminate/events": "^10.26"
+    }
 
 
 
