@@ -1,8 +1,6 @@
 <?php require_once "../views/backend/header.php";?>
-
       <!-- CONTENT -->
       <form action ="index.php?option=banner&cat=process" method="post" enctype="multipart/form-data">
-
       <div class="content-wrapper">
          <section class="content-header">
             <div class="container-fluid">
@@ -39,9 +37,12 @@
                    
                      </div>
                      <div class="col-md-3">
-                     <div class="mb-3">
-                           <label>Vị Trí</label>
-                           <input type="text" name="position" class="form-control">
+                        <div class="mb-3">
+                           <label>Vị trí (*)</label>
+                           <select name="position" class="form-control">
+                              <option value="">None</option>
+                              <option value="1">Tên danh mục</option>
+                           </select>
                         </div>
                       
                         <div class="mb-3">

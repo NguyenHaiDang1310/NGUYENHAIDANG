@@ -4,14 +4,14 @@
             <div class="col-md-4 pt-4">
                <h3 class="widgettilte">CHÚNG TÔI LÀ AI ?</h3>
                <p class="pt-1">
-                  Copyright@ 2024 DienloiShop là hệ thống bán sĩ và lẽ thời trang nam, nữ, trẻ em và quần áo thể thao,
+                  Copyright@ 2024 NGUYENHAIDANG là hệ thống bán sĩ và lẽ thời trang nam, nữ, trẻ em và quần áo thể thao,
                   mong muốn đem đến chất lượng tốt nhất cho khách hàng.
                </p>
                <p class="pt-1">
-                  Địa chỉ: B216A, KP Bình Phước, Phường Bình Nhâm, TP. Thuận An, Bình Dương
+                  Địa chỉ: 103, tăng nhơn phú, phước long b, quuận 9, TP THỦ ĐỨC ,TP HỒ CHÍ MINH
                </p>
                <p class="pt-1">
-                  Điện thoại: 0985 608 759(call, zalo) - Email: dienloisoft@gmail.com
+                  Điện thoại: 0372736636(call, zalo) - Email: nhd131004@gmail.com
                </p>
                <h3 class="widgettilte">MẠNG XÃ HỘI</h3>
                <div class="social my-3">
@@ -38,29 +38,20 @@
                </div>
             </div>
             <div class="col-md-4 pt-4">
-               <h3 class="widgettilte">
-                  <strong>Liên hệ</strong>
-               </h3>
-               <ul class="footer-menu">
-                  <li><a href="index.html">Trang chủ</a></li>
-                  <li><a href="post_page.html">Giới thiệu</a></li>
-                  <li><a href="product.html">Sản phẩm</a></li>
-                  <li><a href="post_topic.html">Bài viết</a></li>
-                  <li><a href="contact.html">Liên hệ</a></li>
-               </ul>
+            <?php require_once "views/frontend/mod-footermenu.php"?>
             </div>
             <div class="col-md-4 pt-4 text-end">
                <h3 class="fs-5 text-end">
                   <strong>Lượt truy cập</strong>
                </h3>
-               <p class="my-1">9888 lượt</p>
+               <p class="my-1">9999999999 lượt</p>
             </div>
          </div>
       </div>
    </section>
    <section class="dhl-copyright bg-dark py-3">
       <div class="container text-center text-white">
-         Thiết kế bởi: Hồ Diên Lợi - Phone: 0998765432
+         Thiết kế bởi: Nguyễn Hải Đăng - Phone: 0372736636
       </div>
    </section>
 </body>

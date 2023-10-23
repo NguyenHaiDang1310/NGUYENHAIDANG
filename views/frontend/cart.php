@@ -4,7 +4,7 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Đăng nhập</title>
+   <title>Giỏ hàng</title>
    <link rel="stylesheet" href="../public/bootstrap/css/bootstrap.min.css">
    <link rel="stylesheet" href="../public/fontawesome/css/all.min.css">
    <link rel="stylesheet" href="../public/css/frontend.css">
@@ -12,7 +12,7 @@
 </head>
 
 <body>
-   <section class="hdl-header">
+   <section class="nhd-header">
       <div class="container">
          <div class="row">
             <div class="col-6 col-sm-6 col-md-2 py-1">
@@ -35,7 +35,7 @@
                      <li class="nav-item">
                         <a class="nav-link" href="login.html">
                            <i class="fa fa-phone-square" aria-hidden="true"></i>
-                           0987654321
+                           0372736636
                         </a>
                      </li>
                      <li class="nav-item">
@@ -45,7 +45,7 @@
                         <a class="nav-link" href="register.html">Đăng ký</a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link" href="profile.html">Hồ Diên Lợi</a>
+                        <a class="nav-link" href="profile.html">Nguyễn Hải Đăng</a>
                      </li>
                   </ul>
                </div>
@@ -64,13 +64,13 @@
          </div>
       </div>
    </section>
-   <section class="hdl-mainmenu bg-main">
+   <section class="nhd-mainmenu bg-main">
       <div class="container">
          <div class="row">
             <div class="col-12 col-md-12">
                <nav class="navbar navbar-expand-lg bg-main">
                   <div class="container-fluid">
-                     <a class="navbar-brand d-block d-sm-none text-white" href="index.html">DIENLOISHOP</a>
+                     <a class="navbar-brand d-block d-sm-none text-white" href="index.html">HAIDANGSHOP</a>
                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -131,53 +131,139 @@
                   <a class="text-main" href="index.html">Trang chủ</a>
                </li>
                <li class="breadcrumb-item active" aria-current="page">
-                  Đăng nhập
+                  Giỏ hàng của bạn
                </li>
             </ol>
          </nav>
       </div>
    </section>
-   <section class="hdl-maincontent py-2">
-      <form action="login.html" method="post" name="logincustomer">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-4">
-                  <p>Để gửi bình luận, liên hệ hay để mua hàng cần phải có tài khoản</p>
-               </div>
-               <div class="col-md-8">
-                  <div class="mb-3">
-                     <label for="username" class="text-main">Tên tài khoản (*)</label>
-                     <input type="text" name="username" id="username" class="form-control"
-                        placeholder="Nhập tài khoản đăng nhập" required>
-                  </div>
-                  <div class="mb-3">
-                     <label for="password" class="text-main">Mật khẩu (*)</label>
-                     <input type="password" name="password" id="password" class="form-control" placeholder="Mật khẩu"
-                        required>
-                  </div>
-                  <div class="mb-3">
-                     <button class="btn btn-main" name="LOGIN">Đăng nhập</button>
-                  </div>
-                  <p><u class="text-main">Chú ý</u>: (*) Thông tin bắt buộc phải nhập</p>
-               </div>
-            </div>
-         </div>
-      </form>
+   <section class="nhd-maincontent py-2">
+      <div class="container">
+         <table class="table table-bordered">
+            <thead>
+               <tr class="bg-dark">
+                  <th style="width:30px;" class="text-center">STT</th>
+                  <th style="width:100px;">Hình</th>
+                  <th>Tên sản phẩm</th>
+                  <th class="text-center">Giá</th>
+                  <th style="width:130px" class='text-center'>Số lượng</th>
+                  <th class="text-center">Thành tiền</th>
+                  <th></th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <td class="text-center align-middle">1</td>
+                  <td>
+                     <img class="img-fluid" src="../public/images/product/thoi-trang-nam-1.jpg" alt="">
+                  </td>
+                  <td class="align-middle">Tên sản phẩm</td>
+                  <td class="text-center align-middle">1000000</td>
+                  <td class="text-center align-middle">
+                     <div class="input-group mb-3">
+                        <span class="input-group-text" id="sub" onclick="changenumber(id)">-</span>
+                        <input type="text" value="1" id="qty" class="form-control text-center">
+                        <span class="input-group-text" id="add" onclick="changenumber(id)">+</span>
+                     </div>
+                  </td>
+                  <td class="text-center align-middle">
+                     12900000
+                  </td>
+                  <td class="text-center align-middle">
+                     <button class="btn btn-sm btn-main">
+                        <i class="fa-solid fa-xmark"></i>
+                     </button>
+                  </td>
+               </tr>
+               <tr>
+                  <td class="text-center align-middle">3</td>
+                  <td>
+                     <img class="img-fluid" src="../public/images/product/thoi-trang-nam-1.jpg" alt="">
+                  </td>
+                  <td class="align-middle">Tên sản phẩm</td>
+                  <td class="text-center align-middle">1000000</td>
+                  <td class="text-center align-middle">
+                     <div class="input-group mb-3">
+                        <span class="input-group-text" id="sub" onclick="changenumber(id)">-</span>
+                        <input type="text" value="1" id="qty" class="form-control text-center">
+                        <span class="input-group-text" id="add" onclick="changenumber(id)">+</span>
+                     </div>
+                  </td>
+                  <td class="text-center align-middle">
+                     12900000
+                  </td>
+                  <td class="text-center align-middle">
+                     <button class="btn btn-sm btn-main">
+                        <i class="fa-solid fa-xmark"></i>
+                     </button>
+                  </td>
+               </tr>
+               <tr>
+                  <td class="text-center align-middle">3</td>
+                  <td>
+                     <img class="img-fluid" src="../public/images/product/thoi-trang-nam-1.jpg" alt="">
+                  </td>
+                  <td class="align-middle">Tên sản phẩm</td>
+                  <td class="text-center align-middle">1000000</td>
+                  <td class="text-center align-middle">
+                     <div class="input-group mb-3">
+                        <span class="input-group-text" id="sub" onclick="changenumber(id)">-</span>
+                        <input type="text" value="1" id="qty" class="form-control text-center">
+                        <span class="input-group-text" id="add" onclick="changenumber(id)">+</span>
+                     </div>
+                  </td>
+                  <td class="text-center align-middle">
+                     12900000
+                  </td>
+                  <td class="text-center align-middle">
+                     <button class="btn btn-sm btn-main">
+                        <i class="fa-solid fa-xmark"></i>
+                     </button>
+                  </td>
+               </tr>
+            </tbody>
+            <tfoot>
+               <tr>
+                  <td colspan="5">
+                     <button class="btn btn-main">Cập nhật</button>
+                     <a href="checkout.html" class="btn btn-main">Thanh toán</a>
+                  </td>
+                  <td colspan="2" class="text-end">
+                     <strong>Tổng tiền: 0999998887</strong>
+                  </td>
+               </tr>
+            </tfoot>
+         </table>
+      </div>
+      <script>
+         function changenumber(id) {
+            var qty = parseInt(document.getElementById("qty").value);
+            if (id == 'sub') {
+               if (qty > 0) {
+                  qty = qty - 1;
+               }
+            }
+            else {
+               qty = qty + 1;
+            }
+            document.getElementById("qty").value = qty.toString();
+         }
+      </script>
    </section>
-   <section class="hdl-footer pb-4">
+   <section class="nhd-footer pb-4">
       <div class="container">
          <div class="row">
             <div class="col-md-4 pt-4">
                <h3 class="widgettilte">CHÚNG TÔI LÀ AI ?</h3>
                <p class="pt-1">
-                  Copyright@ 2024 DienloiShop là hệ thống bán sĩ và lẽ thời trang nam, nữ, trẻ em và quần áo thể thao,
+                      Copyright@ 2024 HAIDANGSHOP là hệ thống bán sĩ và lẽ thời trang nam, nữ, trẻ em và quần áo thể thao,
                   mong muốn đem đến chất lượng tốt nhất cho khách hàng.
                </p>
                <p class="pt-1">
-                  Địa chỉ: B216A, KP Bình Phước, Phường Bình Nhâm, TP. Thuận An, Bình Dương
+                     Địa chỉ: 103, TNP, PHƯỚC LONG B ,THỦ ĐỨC
                </p>
                <p class="pt-1">
-                  Điện thoại: 0985 608 759(call, zalo) - Email: dienloisoft@gmail.com
+                  Điện thoại: 0372736636(fb, zalo) - Email: nhd131004@gmail.com
                </p>
                <h3 class="widgettilte">MẠNG XÃ HỘI</h3>
                <div class="social my-3">
@@ -226,7 +312,7 @@
    </section>
    <section class="dhl-copyright bg-dark py-3">
       <div class="container text-center text-white">
-         Thiết kế bởi: Hồ Diên Lợi - Phone: 0998765432
+         Thiết kế bởi: Nguyễn Hải Đăng - Phone: 0372736636
       </div>
    </section>
 </body>

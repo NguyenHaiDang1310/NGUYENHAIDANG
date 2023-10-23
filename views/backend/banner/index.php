@@ -9,7 +9,6 @@ $list = banner::where('status','!=',0)->orderBy('Created_at','DESC')->get();
 ?>
 <?php require_once "../views/backend/header.php";?>
 <form action ="index.php?option=banner&cat=process" method="post" enctype="multipart/form-data">
-
       <!-- CONTENT -->
       <div class="content-wrapper">
          <section class="content-header">
@@ -38,7 +37,6 @@ $list = banner::where('status','!=',0)->orderBy('Created_at','DESC')->get();
        
                            <th>Tên banner</th>
                            <th>Liên kết</th>
-                           
                         </tr>
                      </thead>
                      <tbody>
@@ -54,13 +52,30 @@ $list = banner::where('status','!=',0)->orderBy('Created_at','DESC')->get();
                               <?= $item->name ; ?> 
                               </div>
                               <div class="function_style">
-                                 <a href="#">Hiện</a> |
-                                 <a href="#">Chỉnh sửa</a> |
-                                 <a href="banner_show.html">Chi tiết</a> |
-                                 <a href="#">Xoá</a>
-                              </div>
+                                       <?php if ($item->status == 1) : ?>
+                                       <a href="index.php?option=banner&cat=status&id=<?=$item->id; ?>" class="btn 
+                                       btn-success btn-xs">
+                                          <i class="fas fa-toggle-on"></i> Hiện
+                                       </a>
+                                       <?php else : ?>
+                                       <a href="index.php?option=banner&cat=status&id=<?= $item->id; ?>" class="btn 
+                                       btn-danger btn-xs">
+                                          <i class="fas fa-toggle-off"></i> Ẩn
+                                       </a>
+                                       <?php endif; ?>
+                                       <a href="index.php?option=banner&cat=edit&id=<?=$item->id; ?>" class="btn btn-primary btn-xs">
+                                       <i class="fas fa-edit"></i> Chỉnh sửa
+
+                                       </a>
+                                       <a href="index.php?option=banner&cat=show&id=<?=$item->id; ?>" class="btn btn-info btn-xs">
+                                       <i class="fas fa-eye"></i> Chi tiết
+                                       </a>
+                                       <a href="index.php?option=banner&cat=delete&id=<?=$item->id; ?>" class="btn btn-danger btn-xs">
+                                       <i class="fas fa-trash"></i> Xoá
+                                       </a>
+                                    </div>
                            </td>
-                           <a href=" <td>    <?= $item->link ; ?> </td>" 
+                           <td>    <?= $item->link ; ?> </td>
                         </tr>
                         <?php endforeach;?>
                               <?php endif;?>

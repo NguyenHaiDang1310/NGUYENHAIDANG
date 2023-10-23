@@ -62,7 +62,7 @@
                         </div>
                         <div class="mb-3">
                            <label>Vai Trò</label>
-<input type="roles" name="roles" class="form-control">
+                        <input type="roles" name="roles" class="form-control">
                         </div>
                        
                         <div class="mb-3">
